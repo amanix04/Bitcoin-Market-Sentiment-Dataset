@@ -1,0 +1,122 @@
+The analysis of trader performance in relation to market sentiment, specific trading strategies, trader types, and timeframes has revealed several interesting patterns.
+
+Overall Relationship between PnL and Fear and Greed Index
+The overall correlation between Daily Total Closed PnL and the Fear and Greed Index Value was found to be approximately 0.00, indicating a very weak linear relationship. This suggests that simply following the Fear and Greed Index directly does not guarantee higher PnL. However, a deeper dive into specific strategies and trader types reveals more nuanced patterns.
+
+The average daily total PnL by Fear and Greed Index Classification is as follows:
+
+Extreme Fear: 4619.44
+Fear: 5328.82
+Neutral: 3438.62
+Greed: 3318.10
+Extreme Greed: 5161.92
+From this, we observe that average daily total PnL is generally higher during periods of 'Fear' and 'Extreme Greed' compared to 'Neutral' and 'Greed' sentiments. This is an interesting observation suggesting that highly emotional market conditions (both fear and greed) might present more opportunities for profit, or that specific traders thrive in these volatile environments.
+
+Analysis by Trading Side (BUY vs. SELL)
+The average Closed PnL for BUY and SELL trades across different sentiment classifications are:
+
+Classification | Average PnL for BUY | Average PnL for SELL
+---------------|---------------------|---------------------
+Extreme Fear   | 34.11              | 34.98
+Extreme Greed  | 10.50              | 114.58
+Fear           | 63.93              | 45.05
+Greed          | 25.00              | 59.69
+Neutral        | 29.23              | 39.46
+
+
+Key Observations:
+
+SELL trades show significantly higher average PnL during 'Extreme Greed': This indicates that selling into overly optimistic markets (when the index is high) could be a highly profitable strategy.
+BUY trades perform well during 'Fear': This suggests that buying when the market is fearful could yield better average returns.
+Overall, SELL trades tend to have higher average PnL in 'Extreme Greed', 'Greed', and 'Neutral' classifications, while BUY trades perform better in 'Fear'.
+Analysis by Coin (Top 5 Coins by Total PnL)
+The average Closed PnL by Coin and Sentiment Classification for the top 5 coins:
+
+Coin Analysis Table:
+
+| **Coin**       | **Extreme Fear** | **Extreme Greed** | **Fear** | **Greed** | **Neutral** |
+|-----------------|------------------|-------------------|----------|-----------|-------------|
+| @107           | -89.59           | 191.16            | -2.29    | 86.25     | 52.15       |
+| BTC (Bitcoin)  | 1.73             | 41.41             | 48.90    | 15.95     | 34.92       |
+| ETH (Ethereum) | 196.93           | -20.76            | 236.86   | 98.22     | 46.75       |
+| HYPE           | 46.90            | 28.10             | 30.06    | 24.57     | 17.32       |
+| SOL (Solana)   | 56.01            | 19.72             | 189.47   | 284.80    | 216.70      |
+
+
+Key Observations:
+
+ETH shows strong performance during 'Extreme Fear' and 'Fear' conditions.
+SOL generally performs very well across most sentiment categories, particularly in 'Greed' and 'Neutral'.
+@107 has strong average PnL during 'Extreme Greed', indicating it might be a good coin to trade when the market is overly bullish.
+BTC shows more consistent positive PnL across all sentiments.
+Analysis by Trader Types
+Traders were categorized into 'Top Performer', 'Average Performer', and 'Underperformer' based on their total PnL.
+
+Trader Type        | Extreme Fear | Extreme Greed | Fear   | Greed    | Neutral | Total    | Average  
+--------------------|--------------|---------------|--------|----------|---------|----------|---------
+Average Performer  | 40.30        | 44.08         | 27.84  | 42.53    | 11.48   | 166.23   | 33.25  
+Top Performer      | 57.39        | 378.88        | 94.59  | 101.05   | 90.54   | 722.45   | 144.49  
+Underperformer     | -35.93       | 74.03         | 44.13  | -192.14  | 20.70   | -89.21   | -17.84  
+
+
+Key Observations:
+
+Top Performers consistently outperform across all sentiment categories, especially during 'Extreme Greed', where their average PnL is significantly higher. This indicates that top traders effectively capitalize on highly volatile and greedy markets.
+Underperformers struggle in 'Extreme Fear' and significantly in 'Greed', suggesting they might be making poor decisions when the market is either very pessimistic or overly optimistic. Their positive PnL in 'Extreme Greed' and 'Fear' suggests they might benefit from some contrarian moves, but their large negative PnL in 'Greed' overshadows this.
+Average performers show moderate PnL across all sentiments.
+Analysis by Timeframes (Yearly and Monthly)
+Average Daily Total PnL by Year and Sentiment Classification
+Year	Extreme Fear	Extreme Greed	Fear	Greed	Neutral
+2023	NaN	0.00	NaN	118.59	NaN
+2024	-146.38	5950.18	-948.55	3666.36	1295.88
+2025	4805.12	2922.98	6388.63	3100.06	3911.69
+
+Export to Sheets
+Key Observations:
+
+There's a noticeable increase in overall PnL from 2023 to 2025, which might indicate market growth or improved trading conditions.
+In 2024, 'Extreme Greed' and 'Greed' showed significant positive PnL, while 'Extreme Fear' and 'Fear' were negative.
+In 2025, all sentiment categories show substantial positive PnL, with 'Fear' and 'Extreme Fear' showing the highest average daily PnL, suggesting profitable opportunities even in pessimistic conditions.
+Average Daily Total PnL by Month and Sentiment Classification (for all years combined)
+Month | Extreme Fear       | Extreme Greed     | Fear             | Greed           | Neutral        
+------|--------------------|-------------------|------------------|-----------------|---------------
+1     | No data           | 2852.26          | No data          | 2172.59         | -1064.17      
+2     | 7209.49           | 1791.57          | 8513.82          | 9977.60         | 4377.79       
+3     | 5861.08           | 2727.04          | 6844.02          | 2573.38         | 3360.63       
+4     | 2046.31           | 1209.27          | 5285.57          | -1949.88        | 3606.39       
+5     | No data           | 849.56           | No data          | 477.43          | 3755.90       
+6     | No data           | 1318.96          | 2203.94          | 2356.88         | 619.33        
+7     | No data           | No data          | 1187.49          | 2919.95         | 1229.21       
+8     | 56.65             | No data          | -2383.14         | 144.80          | 1403.78       
+9     | -552.43           | No data          | 98.35            | 387.23          | 3511.27       
+10    | No data           | 305.80           | 1283.67          | 1023.03         | 1285.95       
+11    | No data           | 1199.38          | No data          | 786.97          | No data       
+12    | No data           | 10714.70         | No data          | 7299.44         | No data       
+
+
+Key Observations:
+
+February, March, and April generally show strong positive PnL across most sentiment categories, with February standing out for high PnL in 'Greed' and 'Fear'.
+December exhibits exceptionally high PnL during 'Extreme Greed' and 'Greed', suggesting strong year-end bullish trends or increased trading activity.
+Certain months have missing data for specific classifications (e.g., January, May, August, September, November, December for 'Extreme Fear'), indicating a lack of those sentiment conditions during those months in the dataset.
+August has negative PnL during 'Fear', suggesting that not all 'Fear' periods are profitable.
+Hidden Patterns and Insights for Smarter Trading Strategies
+Contrarian Opportunities, especially in Extreme Sentiments: While the overall correlation is low, the analysis by average daily PnL by Fear and Greed Index Classification suggests that markets in 'Fear' and 'Extreme Greed' might offer better average returns. This points towards a potential contrarian strategy:
+
+Buy during 'Fear' (when others are panicking): BUY trades specifically show better average PnL in 'Fear'.
+Sell during 'Extreme Greed' (when others are overly enthusiastic): SELL trades show significantly higher PnL in 'Extreme Greed'.
+Adaptive Strategy based on Trader Type:
+
+Top Performers thrive in 'Extreme Greed': If you identify as a 'Top Performer' or aspire to be one, capitalizing on strong bullish markets (potentially through long positions on specific coins like @107 and short positions as the sentiment rises) could be highly rewarding.
+Underperformers should be cautious in 'Greed': The significant negative PnL for underperformers during 'Greed' suggests they might be buying into overvalued assets or being caught in market corrections during such periods. A defensive or contrarian approach might be beneficial.
+Coin-Specific Sentiment Responsiveness:
+
+ETH as a 'Fear' resilient asset: ETH's strong performance during 'Extreme Fear' and 'Fear' suggests it might be a good asset to consider during market downturns, possibly for long-term accumulation or strategic short-term buys.
+SOL for sustained positive sentiment: SOL's consistent positive PnL across 'Greed' and 'Neutral' indicates it might be a reliable performer during periods of general market optimism or stability.
+@107 for "blow-off top" opportunities: Its high PnL during 'Extreme Greed' suggests it could be a target for short-term trades during peak euphoria.
+Seasonal/Monthly Trading Adjustments:
+
+February, March, and April are potentially strong months: These months show generally higher PnL across various sentiments. Traders might consider increasing activity or deploying more aggressive strategies during this period.
+December's 'Extreme Greed' is a significant opportunity: The exceptionally high PnL during 'Extreme Greed' in December highlights a strong seasonal pattern. This could be linked to year-end rallies or specific market dynamics, making it a critical period to monitor for potential profit-taking or shorting opportunities if the market becomes excessively bullish.
+Caution in August 'Fear' and April 'Greed': The negative PnL during 'Fear' in August and 'Greed' in April for combined years warrants caution. This means that not all "fearful" or "greedy" periods are created equal; the specific month matters.
+In conclusion, while the overall correlation between the Fear and Greed Index and PnL is weak, analyzing specific trading strategies, coins, trader types, and timeframes reveals actionable insights. Traders can improve their strategies by adopting a contrarian approach during extreme sentiments, tailoring their coin choices to specific market moods, understanding their own trading tendencies (and adapting if they are underperformers), and considering seasonal patterns in market sentiment.
